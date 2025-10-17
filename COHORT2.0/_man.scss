@@ -1,0 +1,9 @@
+$background-color:pink;
+$border:2px solid black;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 226, 241);
+}

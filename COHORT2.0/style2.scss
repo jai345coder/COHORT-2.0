@@ -1,0 +1,38 @@
+@use 'man';
+//@use 'mixins' as *; now you can use them directly
+
+$height:300px;
+$width:300px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height:100%;
+    width:100%;
+ @include man.flex-center;
+    gap:30px;
+  
+}
+  #page1{  
+    height:$height;
+    width:$width;
+    background-color:man.$background-color;
+    border:man.$border;
+}
+
+#page2{
+    height:$height;
+    width:$width;
+    background-color:man.$background-color;
+    border:man.$border;
+}
+
