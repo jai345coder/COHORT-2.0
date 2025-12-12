@@ -1,0 +1,308 @@
+*{
+margin:0;
+padding:0;
+ box-sizing:border-box; 
+}
+
+html,body{
+    height: 100%;;
+    width:100%;
+    background-color: black;
+}
+
+
+#main{
+    height:100vh;
+    width:100%;
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.page{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+border: 3px solid white;
+}
+
+.click-me{
+    height:30px;
+    width:100px;
+    border-radius:100px;
+}
+.click-me:hover{
+    background-color: yellowgreen;
+}
+
+
+.upload{
+    height:40px;
+    width:100px;
+    border-radius:100px;
+    background-color: skyblue;
+}
+
+
+.upload:hover{
+    background-color: rgb(91, 140, 159);
+}
+
+
+form{
+height:300px;
+padding:10px 0px;
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap:15px;
+width:300px;
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
+}
+
+.fill{
+    height:14%;
+    width:70%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+ form button{
+    height:40px;
+    width:100px;
+    border-radius: 100px;
+    border: 1px solid black ;
+ }
+/* #pic{
+height:100px;
+width:90px;
+background-color: gray;
+border-radius: 50%;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+} */
+
+#card{
+    height:300px;
+    width:300px;
+    /* background-color: tomato; */
+    border-radius: 20px;
+    display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:10px;
+}
+
+#card img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    background-color: thistle;
+}
+
+#card h3{
+  font-size: 35px;
+  color:black;
+  font-family:gilroy;
+  font-weight: 800;
+}
+
+
+
+
+#page2{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+border: 3px solid white;
+}
+
+
+
+
+
+#page2 h1{
+    font-size: 80px;
+    
+}
+.page3{
+    width:100%;
+    height: 100vh;
+  
+border: 3px solid white;
+}
+
+
+#boxes{
+    height:100px;
+    width:100px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    
+}
+
+
+
+#div1{
+    height:500px;
+    width:500px;
+    background-color: blue;
+   
+}
+
+#div2{
+    height:300px;
+    width:300px;
+    background-color: green;
+ 
+}
+#div3{
+    height:100px;
+    width:100px;
+    background-color: yellow;
+   
+}
+
+
+#inputs{
+    height: 30px;
+    width:200px;
+}
+
+
+#main h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 25px;
+}
+
+
+/* change the theme of the page */
+#main h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 100px;
+}
+
+
+#change{
+    height:40px;
+    width:100px;
+    background-color: teal;
+    border-radius: 20px;
+
+}
+
+#change h4{
+    font-size:15px;
+}
+
+
+
+:root{
+    --bg-black:black;
+    --bg-white:white;
+}
+#main{
+    background-color: var(--bg-black);
+    color:var(--bg-white);  
+}
+
+#main{
+    background-color: var(--bg-white);
+    color:var(--bg-black);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

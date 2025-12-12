@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  
+
+}
+
+
+#main {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#main video {
+
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+scale: 1;
+
+}
+
+/* THIS CREATES THE DARK FADE INSIDE */
+#main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(rgba(0, 0, 0, 0.263) 40%,
+            /* smaller clear area → thicker shadow */
+            rgba(0, 0, 0, 1.05) 55%
+            /* darker edges */
+        );
+
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+nav {
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+    position: absolute;
+    top: 3%;
+    z-index: 3;
+}
+
+#logo {
+    height: 5vh;
+    width: 12vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    gap: 10px;
+}
+
+#logo-img {
+    height: 40%;
+    width: 30%;
+    background-color: crimson;
+
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#menu {
+    height: 5vh;
+    width: 18%;
+    margin-right: 50px;
+    border-radius: 100px;
+    background-color:
+        rgba(54, 54, 54, 0.425);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
+    color: rgb(255, 255, 255);
+    justify-content: space-around;
+    border: 2px solid rgb(49, 49, 49);
+}
+
+#menu h3 {
+    font-size: 15px;
+    font-weight: 100;
+    filter: blur(0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#enroll {
+    height: 5vh;
+    width: 8vw;
+    border-radius: 100px;
+    background-color:
+        rgba(54, 54, 54, 0.342);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid rgb(49, 49, 49);
+    justify-content: center;
+}
+
+#enroll h3 {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#logo-text {
+    height: 100%;
+    width: 80%;
+    padding: 0px 0px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+
+}
+
+.logo-text {
+    color: white;
+
+    font-size: 16px;
+    font-family: monospace;
+    padding: 0px 2px;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px solid rgb(255, 255, 255);
+}
+
+
+/*! page1 ===============================================================================*/
+
+#page1 {
+    height: 85vh;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 h1 {
+    font-size: 120px;
+    color: aliceblue;
+    font-weight: 300;
+    z-index: 3;
+    font-family: "BwGradualDEMO-Regular";
+    background-color: transparent;
+    font-family: sans-serif;
+}
+
+#page1 h5 {
+    font-size: 30px;
+    font-weight: 100;
+    z-index: 3;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#page1-enroll {
+    margin-top: 3%;
+    height: 8vh;
+    z-index: 3;
+    color: rgb(0, 0, 0);
+    width: 11vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:
+        rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    text-align: center;
+    animation: border-rotator 5s infinite linear;
+    transition: ease-in-out 0.5s;
+    animation-direction: linear;
+}
+
+/* page1-enroll border animation */
+@keyframes border-rotator {
+    0% {
+        border-top: 2px solid rgb(255, 255, 255);
+        /* border-right: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid rgb(255, 255, 255); */
+    }
+
+    25% {
+        /* border-top: 2px solid rgb(255, 255, 255); */
+        border-right: 2px solid rgb(255, 255, 255);
+        /* border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid rgb(255, 255, 255); */
+    }
+
+    50% {
+        /* border-top: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid rgb(255, 255, 255); */
+        border-bottom: 2px solid rgb(255, 255, 255);
+        /* border-left: 2px solid rgb(255, 255, 255); */
+    }
+
+    75% {
+        /* border-top: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255); */
+        border-left: 2px solid rgb(255, 255, 255);
+    }
+
+    100% {}
+}
+
+#page1-enroll h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#black-filter {
+    height: 85vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.769);
+    z-index: 3;
+    position: absolute;
+    top: 15%;
+}
+
+/* Page 2=================================================================================== */
+#page2 {
+    height: 120vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    padding: 100px 0px 0px 0px;
+
+}
+
+.parent-strip {
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.699);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroll-strip {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: scroller 8s linear infinite;
+
+    gap: 100px;
+
+}
+
+.companies {
+    height: 100%;
+    width: 20%;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    background-color: aqua;
+    margin: 0px 20px;
+    border-radius: 100px;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+@keyframes scroller {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+#About-Para {
+    height: 110vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 90px 50px 0px 50px;
+}
+
+#About-Para h4 {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#para {
+    height: 80%;
+
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px 10px 0px;
+  
+
+}
+
+#para p {
+    font-size: 50px;
+    color: #9CA3AF;
+    font-family: "Urbanist Medium";
+    margin-bottom: 40px;
+}
+#paras span{
+color: black;
+}
+
+#ratings{
+    height:30%;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    align-items: left;
+    justify-content: left;
+    gap:40px;
+}
+
+#rating{
+    height:100%;
+    width:25%;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+#rating h4{
+    
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-family:"Urbanist";
+}
+
+#rating h3{
+    color: rgb(115, 115, 115);
+    font-size: 20px;
+    font-family: "Urbanist";
+}
+
+
+
+
+/* page3 ========================================================== */
+ #page3{
+   height:275vh;
+    width:100%;
+    background-color:rgb(11, 242, 146);
+    margin-top:50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ #key-Features{
+    margin-top:20px ;
+
+background-color:rgba(255, 255, 255, 0);
+text-align: center;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: end;
+position:absolute;
+top:-14%;
+z-index: 1;
+
+ }
+
+ #key-Features h1{
+    font-size:180px;
+    text-align: end;
+    font-family: "Urbanist Medium";
+color: rgb(20, 20, 20);
+ }
+
+#filter1{
+    height:34vh;
+    width:100%;
+    background: linear-gradient(to bottom , transparent 0% ,rgb(255, 255, 255) 75% );
+    position:absolute;
+   
+}
+ #rotator-container{
+width:100%;
+/* height:290vh; */
+background-color: rgb(255, 255, 255);
+ display:flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+   z-index: 2;
+   
+    padding:20px 50px 20px 50px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+ }
+
+
+
+.box{
+    height:90vh;
+    width:95%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 0px 50px 0px;
+}
+#temp3{
+    display: fixed;
+}
+
+.box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.p1{
+    background-color: rgba(0, 255, 255, 0);
+    width:20%;
+   
+    position:absolute;
+    top: 10%;
+    left:6%;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    font-family: "urbanist";
+}
+
+.p2{
+     background-color: rgba(0, 255, 255, 0);
+    width:16%;
+   font-size: 23px;
+   top:40%;
+   font-weight: 100;
+   right:15%;
+    color: rgb(255, 255, 255);
+    font-family: "urbanist";
+    position:absolute;
+}
+     .box h1{
+        font-size:90px;
+        position: absolute;
+        font-weight: 200;
+        top:50%;
+        left:4%;
+        color:white;
+        line-height: 99%;
+        font-family: "urbanist";
+     }   
+
+
+/* page4============================================= */
+
+
+#page4{
+    height:100vh;
+    width:100%;
+    background-color: rgb(13, 9, 220);
+    margin-top: 150px;
+    display: flex;
+    align-items:top ;
+    
+}
+#solution{
+    height:70vh;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:240%;
+   
+}
+#page4-top{
+    height:50vh;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding:0px 0px 0px 50px;
+}
+
+#page4-top h1{
+font-size:130px;
+/*font-family: BwGradual */
+font-family: "Urbanist";
+
+color: rgb(255, 255, 255);
+}
+
+#page4-top h4{
+    font-size: 25px;
+    font-weight: 100;
+    font-family: "Urbanist";
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

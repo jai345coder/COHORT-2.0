@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+$width:calc(100% / 5);  
+
+
+body,html{
+    height:100%;
+    width:100%;
+
+}
+
+#main{
+    height:100%;
+    width:100%;
+    background-color: bisque;
+    display:flex;
+    align-items: center ;
+    gap:15px;
+
+}
+.sec{
+    background-color: rgb(172, 102, 11);
+    height:100%;
+    width:$width;//to distribute divs equallly in the screen also can use flex grow
+
+    img{
+        height:100%;
+        width:100%; 
+        object-fit:cover;
+    }
+
+}
+.sec:hover{
+    width:$width * 2;
+    transition:  all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
